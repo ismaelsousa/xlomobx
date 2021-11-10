@@ -14,6 +14,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Entrar'),
+        centerTitle: true,
       ),
       body: Container(
         alignment: Alignment.center,
@@ -81,7 +82,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       border: OutlineInputBorder(),
                       isDense: true,
                     ),
-                    keyboardType: TextInputType.emailAddress,
+                    obscureText: true,
                   ),
                   const SizedBox(
                     height: 12,
